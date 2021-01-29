@@ -17,8 +17,9 @@ class Main
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // YOU MUST HAVE THIS LINE
     frame.setSize(500, 500);
     frame.setVisible(true);
-    
+
     // ----- Panel 1 -----
+    JPanel panel1 = new JPanel(new GridLayout(2, 2, 20, 20));
 
     // ----- Image Label -----
 
@@ -27,6 +28,7 @@ class Main
     // ----- Adding to Panel 1 -----
 
     // ----- Panel 2 -----
+    JPanel panel2 = new JPanel(new BorderLayout(10, 10));
 
     // ----- "Next" Button ----- 
 
@@ -35,6 +37,8 @@ class Main
     // ----- Adding to Panel 2 -----
 
     // ----- Adding to Frame -----
+    frame.getContentPane().add(BorderLayout.NORTH, panel1);
+    frame.getContentPane().add(BorderLayout.CENTER, panel2);
 
   } // end main method
 } // end Main class

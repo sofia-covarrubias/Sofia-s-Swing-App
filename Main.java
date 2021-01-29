@@ -22,10 +22,14 @@ class Main
     JPanel panel1 = new JPanel(new GridLayout(2, 2, 20, 20));
 
     // ----- Image Label -----
+    JLabel imgLabel = new JLabel("Testing");
 
     // ----- Image Text Field -----
+    JTextField imgTextField = new JTextField(10);
 
     // ----- Adding to Panel 1 -----
+    panel1.add(imgLabel);
+    panel1.add(imgTextField);
 
     // ----- Panel 2 -----
     JPanel panel2 = new JPanel(new BorderLayout(10, 10));

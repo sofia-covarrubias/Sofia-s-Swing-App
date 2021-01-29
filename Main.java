@@ -13,7 +13,11 @@ class Main
   public static void main (String[] args)
   {
     // ----- Frame -----
-
+    JFrame frame = new JFrame("Sofia's Duck Slideshow");
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // YOU MUST HAVE THIS LINE
+    frame.setSize(500, 500);
+    frame.setVisible(true);
+    
     // ----- Panel 1 -----
 
     // ----- Image Label -----
